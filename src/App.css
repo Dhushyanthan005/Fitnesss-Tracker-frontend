@@ -1,0 +1,162 @@
+.topNav {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 0;
+  margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topNav .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topNav a {
+  color: white;
+  padding: 16px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.topNav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom-color: white;
+  text-decoration: none;
+}
+
+.topNav .right {
+  margin-left: auto;
+}
+
+.topNav .mini {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  padding: 16px 16px;
+}
+
+.topNav .danger {
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.topNav .danger:hover {
+  background: rgba(220, 38, 38, 1);
+}
+
+.title {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.smallCard {
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.smallCard h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.smallCard p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.smallCard b {
+  font-weight: 600;
+}
+
+.chartRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  height: 80px;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(102, 126, 234, 0.05), transparent);
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.bar {
+  width: 20px;
+  background: linear-gradient(to top, #667eea, #764ba2);
+  border-radius: 4px 4px 0 0;
+  transition: all 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.bar2 {
+  background: linear-gradient(to top, #48bb78, #38a169);
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  border: none;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #48bb78, #38a169);
+  border-radius: 4px;
+}
+
+.listItem {
+  border: none;
+  border-left: 4px solid #667eea;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.listItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.listItem h4 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.mini {
+  font-size: 13px;
+  color: #718096;
+}
+
+
