@@ -24,7 +24,7 @@ export default function LoginPage({ setUser }) {
         ? { email, password }
         : { username, email, password };
 
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
@@ -46,7 +46,7 @@ export default function LoginPage({ setUser }) {
       setLoading(false);
       nav("/dashboard");
     } catch (err) {
-      setError("Connection error. Make sure backend is running on http://localhost:5000");
+      setError("Connection error. Make sure backend is running.");
       setLoading(false);
     }
   }

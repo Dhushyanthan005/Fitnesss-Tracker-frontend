@@ -30,7 +30,7 @@ export default function AddWorkoutPage({ workouts, setWorkouts }) {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/workouts", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/workouts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

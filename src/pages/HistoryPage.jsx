@@ -29,7 +29,7 @@ export default function HistoryPage({ workouts, setWorkouts, meals, setMeals }) 
       if (!token) return;
 
       setLoadingWorkouts(true);
-      const response = await fetch("http://localhost:5000/api/workouts", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/workouts`, {
         headers: {
           "Authorization": `Bearer ${token}`,
         },
@@ -52,7 +52,7 @@ export default function HistoryPage({ workouts, setWorkouts, meals, setMeals }) 
       if (!token) return;
 
       setLoadingMeals(true);
-      const response = await fetch("http://localhost:5000/api/meals", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/meals`, {
         headers: {
           "Authorization": `Bearer ${token}`,
         },
@@ -108,7 +108,7 @@ export default function HistoryPage({ workouts, setWorkouts, meals, setMeals }) 
   async function deleteWorkout(id) {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:5000/api/workouts/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/workouts/${id}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -128,7 +128,7 @@ export default function HistoryPage({ workouts, setWorkouts, meals, setMeals }) 
   async function deleteMeal(id) {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:5000/api/meals/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/meals/${id}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${token}`,
